@@ -5,6 +5,7 @@
     <class>modelo.Usuarios</class>
     <class>tablas1.Empleo1</class>
     <class>tablas1.Zona</class>
+    <class>Modelo.Encapsulados.Encuestado</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/prueba1?zeroDateTimeBehavior=convertToNull"/>

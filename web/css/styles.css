@@ -19,12 +19,15 @@ html { overflow-y: scroll; }
 body {
   font-family: Arial, Tahoma, sans-serif;
   background:  #3b5998;
-  font-size: 62.5%;
+  font-size: 100%;
   line-height: 1;
   padding-top: 40px;
 }
 
-br { display: block; line-height: 1.6em; } 
+br {
+    display: block;
+    line-height: 1.6em;
+} 
 
 input, textarea { 
   -webkit-font-smoothing: antialiased;
@@ -34,7 +37,7 @@ input, textarea {
 strong, b { font-weight: bold; }
 em, i { font-style: italic; }
 
-h1 {
+h1 {/**aquí**/
   display: block;
   font-size: 3.1em;
   line-height: 1.45em;
@@ -45,26 +48,34 @@ h1 {
   text-shadow: 1px 1px 0 #fff;
 }
 
+h3 {/**aquí**/
+  display: block;
+  font-size: 22px;
+  font-family: 'Roboto', serif;
+  text-align: justify;
+  font-weight: bold;
+  color: grey;
+  text-shadow: 1px 1px 0 #fff;
+}
 
 /** form field **/
 form {
   display: block;
-  margin: 40px;
+  margin: 19px;
   overflow: hidden;
   background: #ffffff; /*color de fondo de adentro*/
   border: 1.5px solid grey;
   border-radius: 5px;
-  font-size: 0;
+  font-size: 1px;
 }
 
 form > div > label {
-  display: block;
+  display: inline-block;
   padding: 20px 110px 10px;
   vertical-align: top;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
-  text-transform: uppercase;
-  color: #939393;
+  color: grey;
   cursor: pointer;
 }
 form > div.switch > label {
@@ -80,7 +91,7 @@ form > div > .col-4 {
 }
 
 label > input {
-  display: inline-block;
+  display: inherit;
   position: relative;
   width: 100%;
   height: 27px;
@@ -89,17 +100,35 @@ label > input {
   padding: 7px 5px 3px;
   border: none;
   outline: none;
-  color: #555;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: black;
+  font-family: 'roboto', Arial, sans-serif;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
+  opacity: .6;
+  transition: all linear .3s;
+}
+pp{
+  display: inherit;
+  position: initial;
+  width: 100%;
+  height: 100%;
+  line-height: 27px;
+  margin: 5px 499px 0px;
+  padding: 7px 5px 20px;
+  border: none;
+  outline: none;
+  color: black;
+  font-family: 'roboto', Arial, sans-serif;
+  font-weight: 900;
+  font-size: 30px;
   opacity: .6;
   transition: all linear .3s;
 }
 
+
 .col-submit {
   text-align: center;
-  padding: 20px;
+  padding: 200px;
 }
 
 label > select {
@@ -188,17 +217,17 @@ header nav a {
 	position: relative;
 	width: 2.5em;
 	height: 2.5em;
-	background: #3b5998;
+	background: #3b5998;/**fondo de circulo flecha**/
 	border-radius: 50%;
 	color: transparent;
 	margin: 0 0.1em;
-	border: 4px solid #8DC26F;
+	border: 4px solid white;/**contorno osea el circulo**/
 	text-indent: -8000px;
 }
 
-header nav a:after {
+header nav a:after {  /**Texto de la flecha**/
 	content: attr(data-info);
-	color: #8DC26F;
+	color: white;
 	position: absolute;
 	width: 600%;
 	top: 120%;
@@ -213,7 +242,7 @@ header nav a:after {
 }
 
  header nav a:hover {
-	background: #8DC26F;
+	background: #3b5998;/**fondo post**/
 }
 
 icon-drop:before, 
@@ -231,7 +260,7 @@ icon-arrow-left:before {
 	font-weight: normal;
 	line-height: 2;
 	text-align: center;
-	color: #8DC26F;
+	color: white;
 	-webkit-font-smoothing: antialiased;
 	text-indent: 8000px;
 	padding-left: 8px;
@@ -248,7 +277,7 @@ icon-arrow-left2:before {
 	font-weight: normal;
 	line-height: 2;
 	text-align: center;
-	color: #3b5998;
+	color: white;
 	-webkit-font-smoothing: antialiased;
 	text-indent: 8000px;
 	padding-left: 8px;

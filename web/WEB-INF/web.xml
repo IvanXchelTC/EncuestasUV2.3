@@ -4,9 +4,17 @@
         <servlet-name>alo</servlet-name>
         <servlet-class>SERVLETS.alo</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Encuesta1</servlet-name>
+        <servlet-class>Controladores.Encuestas.Encuesta1.Encuesta1</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>alo</servlet-name>
         <url-pattern>/alo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Encuesta1</servlet-name>
+        <url-pattern>/Encuesta1</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
